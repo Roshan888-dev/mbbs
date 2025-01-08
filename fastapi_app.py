@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 import os
 import django
+from django.contrib.auth.models import User
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mbbs_backend.settings')
 django.setup()
 
-from django.contrib.auth.models import User
 
 app = FastAPI()
 
